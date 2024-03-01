@@ -2,9 +2,12 @@ package main
 
 import "fmt"
 
-func main() {
-	var username string = "name"
-	var password int = 12345
+func concat(s1 string, s2 string) string {
+	return s1 + s2
+}
 
-	fmt.Println("Auth: Basic", username+":"+password)
+func main() {
+	fmt.Println(concat("Lane,", " happy birthday!"))
+	fmt.Println(concat("Elon,", " hope that Tesla thing works out!"))
+	fmt.Println(concat("Go,", " is fantastic!"))
 }
